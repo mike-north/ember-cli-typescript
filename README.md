@@ -38,6 +38,25 @@ Use TypeScript in your Ember 2.x and 3.x apps!
   * [Some `import`s don't resolve](#some-imports-dont-resolve)
   * [Type safety when invoking actions](#type-safety-when-invoking-actions)
 
+## Getting Help
+
+When seeking help, you should first consider what you need, and which aspect of the Ember+TypeScript ecosystem your issue pertains to.
+
+### 📚 Issues With Ember Type Definitions
+
+If you've found that some of the ember type information is missing things, or is incorrect in some way, please open an issue [here](https://github.com/mike-north/ember-cli-typescript/issues/new?template=ISSUE_TEMPLATE_TYPES.md&labels=%5Btypes%5D&title=[@types/ember]%20-%20-%3CYOUR_DESCRIPTION_HERE%3E)
+
+### ⚙️ Issues With Adding TypeScript Support To Apps and Addons
+
+### ✅ Issues With Static Analysis of TypeScript In Ember Apps and Addons
+
+
+
+- 💬 Slack
+- 🏗 Work In Progress
+
+
+
 ## Setup and Configuration
 
 To install or upgrade the addon, just run:
@@ -50,14 +69,18 @@ All dependencies will be added to your `package.json`, and you're ready to roll!
 
 In addition to ember-cli-typescript, we make the following changes to your project:
 
+### Other Packages This Addon Installs
+
 * We install the following packages—all at their current "latest" value—or generated:
 
   * [`typescript`](https://github.com/Microsoft/TypeScript)
-  * [`@types/ember`](https://www.npmjs.com/package/@types/ember)
-  * [`@types/ember-data`](https://www.npmjs.com/package/@types/ember-data)
-  * [`@types/rsvp`](https://www.npmjs.com/package/@types/rsvp)
-  * [`@types/ember-test-helpers`](https://www.npmjs.com/package/@types/ember-test-helpers) – these are the importable test helpers from [RFC #232](https://github.com/emberjs/rfcs/blob/master/text/0232-simplify-qunit-testing-api.md)-style tests
-  * [`@types/ember-testing-helpers`](https://www.npmjs.com/package/@types/ember-testing-helpers) – these are the globally-available acceptance test helpers
+  * **@types/ember** ([npm](https://www.npmjs.com/package/@types/ember) | [source](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ember)) - Types for [Ember.js](https://github.com/emberjs/ember.js)
+  * **@types/ember-data** - ([npm](https://www.npmjs.com/package/@types/ember-data) | [source](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ember-data)) - Types for [Ember-Data](https://github.com/emberjs/data)
+  * **@types/rsvp** - ([npm](https://www.npmjs.com/package/@types/rsvp) | [source](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/rsvp)) - Types for [RSVP.js](https://github.com/tildeio/rsvp.js/)
+  * **@types/ember-test-helpers** - ([npm](https://www.npmjs.com/package/@types/ember-test-helpers) | [source](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ember-test-helpers)) Types for [ember-test-helpers](https://github.com/emberjs/ember-test-helpers), which arose from [RFC #232](https://github.com/emberjs/rfcs/blob/master/text/0232-simplify-qunit-testing-api.md)
+  * **@types/ember-testing-helpers** - ([npm](https://www.npmjs.com/package/@types/ember-testing-helpers) | [source](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/ember-testing-helpers)) – Types for [Ember's built-in globally-available test helpers](https://github.com/emberjs/ember.js/tree/master/packages/ember-testing/lib/helpers)
+
+### Files this addon Generates
 
 * We add the following files to your project:
 
